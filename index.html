@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style-1.css">
+    <link rel="stylesheet" href="css/cursos.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.0/swiper-bundle.css">
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,100;1,300;1,500&display=swap" rel="stylesheet">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="img/eu-21.jpg" alt="" srcset="" class="image--logo">
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Ricardo Dias</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">lore</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Sobre Mim</a>
+                </li>
+                <li>
+                    <a href="#">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#">Cursos</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                   
+                </li>
+                <li>
+                   
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar fixed-top  navbar-expand-lg  ">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info cor-mode">
+                        <i class="fas fa-bars "></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <div class="dropdown">
+                                <button class="btn cor-mode" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Redes Sociais
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: white;">RD</a>
+                            </li>
+                            <li class="nav-item">
+                               
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#">
+                                    <img src="img/undraw_Forms_re_pkrt.png"width="30" height="30" alt="" style="border-radius: 15px
+                                    ;">
+                                  </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            
+                <div class="row mode-2">
+                 <div class="col align-self-center">
+                    <h2>Ricardo de Abreu Dias</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                </div>  
+                  <div class="col align-self-center">
+                    <img src="img/esse-sou-eu.png" alt="" class="imagem">
+                  </div>
+                </div>
+            <div class="mode-2">
+              <h1 class="">Habilidades</h1>
+                <div class="row mode">
+               
+                    <div class="col align-self-center">
+                        <img src="img/habilidades o mehor.png" alt="" class="imagem">
+                    </div>
+                    <div class="col align-self-center  ">
+                        <div class="card-deck">
+                            <div class="card--1">
+                              <img src="img/habilidades/html----imagrm.png" alt="" class="imagem-habilidades">
+                              <h1 class="tl-card">html</h1>
+                              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos saepe consequatur quaerat ipsam asperiores placeat enim veniam </p>
+                            </div>
+                            <div class="card--1">
+                              <img src="img/habilidades/css-3.png" alt="" class="imagem-habilidades">
+                              <h1 class="tl-card">Css</h1>
+                              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos saepe consequatur quaerat ipsam asperiores placeat enim veniam </p>
+                            </div>
+                            <div class="card--1">
+                              <img src="img/habilidades/javascript.png" alt="" class="imagem-habilidades">
+                              <h1 class="tl-card">javascript</h1>
+                              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos saepe consequatur quaerat ipsam asperiores placeat enim veniam </p>
+                            </div>
+                            <div class="card--1">
+                              <img src="img/habilidades/bootstrap.png" alt="" class="imagem-habilidades">
+                              <h1 class="tl-card">bootstrap</h1>
+                              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos saepe consequatur quaerat ipsam asperiores placeat enim veniam </p>
+                            </div>
+                            <div class="card--1">
+                              <img src="img/habilidades/php-imagem.png" alt="" class="imagem-habilidades">
+                              <h1 class="tl-card">PHP</h1>
+                              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos saepe consequatur quaerat ipsam asperiores placeat enim veniam </p>
+                            </div>
+                            <div class="card--1">
+                              <img src="img/habilidades/mysql.png" alt="" class="imagem-habilidades">
+                              <h1 class="tl-card">MySQL</h1>
+                              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos saepe consequatur quaerat ipsam asperiores placeat enim veniam </p>
+                            </div>
+                            
+                            
+                          </div>
+                          <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+              <h1 class="titulo">Cursos</h1>
+            </div>
+
+            <div class="row mode-2">
+                <div class="col align-self-center">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="cursos">
+                                  <h1 class="tl__cursos">Etec Adolpho Berezin</h1>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ullam excepturi, vitae a sequi laboriosam quas placeat magni neque animi possimus ea nisi ipsam nulla, officiis, iusto facilis cum quisquam.</p>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="cursos">
+                                <h1 class="tl__cursos">Escola Fortec Praia Grande</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ullam excepturi, vitae a sequi laboriosam quas placeat magni neque animi possimus ea nisi ipsam nulla, officiis, iusto facilis cum quisquam.</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" >
+                            <div class="cursos">
+                                <h1 class="tl__cursos">PHP 7 Completo - Curso do Desenvolvedor Web 2020 + Projetos</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ullam excepturi, vitae a sequi laboriosam quas placeat magni neque animi possimus ea nisi ipsam nulla, officiis, iusto facilis cum quisquam.</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="cursos">
+                                <h1>JavaScript Funcional e Reativo - PENSE como um Dev JS [2020]</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ullam excepturi, vitae a sequi laboriosam quas placeat magni neque animi possimus ea nisi ipsam nulla, officiis, iusto facilis cum quisquam.</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="cursos">
+                                <h1 class="tl__cursos">Desenvolvimento Responsivo com HTML5, CSS3 e Javascript</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ullam excepturi, vitae a sequi laboriosam quas placeat magni neque animi possimus ea nisi ipsam nulla, officiis, iusto facilis cum quisquam.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.0/swiper-bundle.min.js"></script>
+                      <!-- Swiper JS -->
+                      <script src="../package/swiper-bundle.min.js"></script>
+                    
+                      <!-- Initialize Swiper -->
+                      <script>
+                        var swiper = new Swiper('.swiper-container', {
+                          effect: 'cube',
+                          grabCursor: true,
+                          cubeEffect: {
+                            shadow: true,
+                            slideShadows: true,
+                            shadowOffset: 30,
+                            shadowScale: 0.94,
+                          },
+                          pagination: {
+                            el: '.swiper-pagination',
+                          },
+                        });
+                      </script>
+                </div>
+                <div class="col align-self-center">
+                    <img src="img/cursos.png" alt="" class="tm__imagem">
+                </div>
+            </div>
+
+
+           
+            <h1 class="">Portifolio</h1>
+            <div class="row">
+               
+                <div class="col align-self-center">
+                    <img src="img/portifolio.png" alt="" class="tm__imagem">
+                </div>
+                <div class="col align-self-center">
+                    <div class="row">
+                        <div class="col-6 ">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                            <a class="list-group-item list-group-item-action" id="" data-bs-toggle="list" href="" role="tab" aria-controls="home">Home</a>
+                            <a class="list-group-item list-group-item-action" id="" data-bs-toggle="list" href="" role="tab" aria-controls="home">Home</a>
+                            <a class="list-group-item list-group-item-action" id="" data-bs-toggle="list" href="" role="tab" aria-controls="home">Home</a>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">safjjfhajh</div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row mode-2 ">
+                <div class="col-4 align-self-center">
+                  <h1>
+                    Contato
+                  </h1>
+                  <form>
+                    <div class="mb-12">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-6">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <div class="mb-12">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+                <div class="col-6">
+                </div>
+            </div>
+            </div>    
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
